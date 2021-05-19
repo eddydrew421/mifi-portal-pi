@@ -1,0 +1,447 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+<-----------------------------Utility Classes------------------------------->
+*/
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: b;
+  left: 0;
+  font-family: "Cairo", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #3b3b3b;
+  overflow-x: hidden;
+}
+
+.white-svg {
+  filter: invert(1);
+}
+
+.color-svg {
+  filter: invert(1);
+}
+
+.icon-center {
+  height: 75px;
+}
+
+/*
+<-----------------------------Form------------------------------->
+*/
+
+form {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 75%;
+  padding: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  border: 1px transparent;
+  border-radius: 10px;
+  font-family: "Cairo";
+}
+
+.select {
+  width: 75%;
+  padding: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  border: 1px transparent;
+  border-radius: 10px;
+  font-family: "Cairo";
+}
+
+fieldset {
+  background: none;
+  border: 0;
+  font-family: "Lato";
+}
+
+.message-box {
+  width: 100%;
+  height: 18rem;
+  border: 1px #d6d6d6 solid;
+}
+
+.submit-btn-4 {
+  background: #e91e63;
+  color: #ffff;
+  border: 1px transparent;
+  border-radius: 10px;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Cairo";
+}
+
+.padded {
+  padding: 5rem;
+}
+
+#submit-btn:hover {
+  background: none;
+  color: white;
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.select-dropdown {
+  padding: 0.5rem;
+}
+
+.form-box {
+  width: 100%;
+}
+
+.city-background {
+  background-image: url(/img/bogota-background.jpg);
+  background-color: #00000087;
+  background-blend-mode: darken;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.city-background-color {
+  background-image: url(/img/bogota-background-light.jpg);
+  /* background-color: #00000087;
+  background-blend-mode: darken; */
+  /* background: rgb(239 239 243); */
+  /* background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgb(255 66 196)
+  ); */
+  color: white;
+  text-align: center;
+  background-size: cover;
+  /* padding: 2rem; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.urban-form {
+  background: rgb(239 239 243 / 48%);
+  /* background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgb(255 66 196 / 91%)
+  ); */
+  border-radius: 2rem;
+  width: 70%;
+  padding: 1rem;
+}
+
+.urban-form-colored {
+  background: linear-gradient(to right bottom, #9c27b0d6, rgb(161 124 227));
+  border-radius: 2rem;
+  width: 70%;
+  padding: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Utility classes */
+
+.responsive-img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*----------------Grid system---------------------- */
+
+.row {
+  /*max-width: 1000px;
+  margin: 0 auto;*/
+  display: flex;
+  /* This will allow our row to display columns horizontally */
+  flex-wrap: wrap;
+  /* This will become necessary to allow our flex boxes to stack in responsive mode */
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+/* Small and up columns */
+
+/* If an element needs all twelve columns, then its width is 100%. Easy. */
+
+.col-small-12 {
+  width: 100%;
+}
+
+/* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+
+.col-small-11 {
+  width: 91.666%;
+}
+
+.col-small-10 {
+  width: 83.333%;
+}
+
+.col-small-9 {
+  width: 75%;
+}
+
+.col-small-8 {
+  width: 66.666%;
+}
+
+.col-small-7 {
+  width: 58.333%;
+}
+
+/* This is the class we'd use if we want two 50/50 elements next to each other */
+
+.col-small-6 {
+  width: 50%;
+}
+
+.col-small-5 {
+  width: 41.666%;
+}
+
+/* This is the class we'd use if we want three elements next to each other */
+
+.col-small-4 {
+  width: 33.333%;
+}
+
+/* This is the class we'd use if we want four elements next to each other */
+
+.col-small-3 {
+  width: 25%;
+}
+
+.col-small-2 {
+  width: 16.666%;
+}
+
+/* We'll almost NEVER use this */
+
+.col-small-1 {
+  width: 8.333%;
+}
+
+/* ------------------Media Queries------------------------ */
+
+@media (max-width: 960px) {
+}
+
+/* mobile */
+
+/* when the screen hits 500px, increase the size of the form and fields*/
+@media screen and (max-width: 500px) {
+  .urban-form {
+    border-radius: 2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* input {
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  } */
+}
+
+@media screen and (max-width: 350px) {
+  input {
+    width: 100%;
+  }
+
+  .select {
+    width: 100%;
+  }
+
+  /* input {
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  } */
+}
+
+/* when the screen hits 270px, increase the size of the form and fields so to not overflow*/
+@media screen and (max-width: 270px) {
+  .urban-form {
+    border-radius: 2rem;
+    width: 120%;
+    padding: 1rem;
+  }
+
+  .urban-form-colored {
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .select {
+    width: 100%;
+  }
+}
+
+/* tiny screens */
+@media screen and (max-width: 233px) {
+  .urban-form {
+    background: rgb(239 239 243);
+    border-radius: 2rem;
+    width: 150%;
+    padding: 1rem;
+  }
+}
+
+/* tiny screens */
+@media screen and (max-width: 200px) {
+  .urban-form {
+    background: rgb(239 239 243);
+    border-radius: 2rem;
+    width: 200%;
+    padding: 1rem;
+  }
+}
+
+/* Medium and up screen sizes */
+
+@media only screen and (min-width: 641px) {
+  .col-medium-12 {
+    width: 100%;
+  }
+  /* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+  .col-medium-11 {
+    width: 91.666%;
+  }
+  .col-medium-10 {
+    width: 83.333%;
+  }
+  .col-medium-9 {
+    width: 75%;
+  }
+  .col-medium-8 {
+    width: 66.666%;
+  }
+  .col-medium-7 {
+    width: 58.333%;
+  }
+  /* This is the class we'd use if we want two 50/50 elements next to each other */
+  .col-medium-6 {
+    width: 50%;
+  }
+  .col-medium-5 {
+    width: 41.666%;
+  }
+  /* This is the class we'd use if we want three elements next to each other */
+  .col-medium-4 {
+    width: 33.333%;
+  }
+  /* This is the class we'd use if we want four elements next to each other */
+  .col-medium-3 {
+    width: 25%;
+  }
+  .col-medium-2 {
+    width: 16.666%;
+  }
+  /* We'll almost NEVER use this */
+  .col-medium-1 {
+    width: 8.333%;
+  }
+
+  /* form {
+    min-width: 300px;
+  } */
+
+  .section {
+    padding: 1rem;
+  }
+
+  /* input {
+    border-radius: 5px;
+  } */
+}
+
+/* Large screen sizes */
+
+@media only screen and (min-width: 1080px) {
+  .col-large-12 {
+    width: 100%;
+  }
+  /* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+  .col-large-11 {
+    width: 91.666%;
+  }
+  .col-large-10 {
+    width: 83.333%;
+  }
+  .col-large-9 {
+    width: 75%;
+  }
+  .col-large-8 {
+    width: 66.666%;
+  }
+  .col-large-7 {
+    width: 58.333%;
+  }
+  /* This is the class we'd use if we want two 50/50 elements next to each other */
+  .col-large-6 {
+    width: 50%;
+  }
+  .col-large-5 {
+    width: 41.666%;
+  }
+  /* This is the class we'd use if we want three elements next to each other */
+  .col-large-4 {
+    width: 33.333%;
+  }
+  /* This is the class we'd use if we want four elements next to each other */
+  .col-large-3 {
+    width: 25%;
+  }
+  .col-large-2 {
+    width: 16.666%;
+  }
+  /* We'll almost NEVER use this */
+  .col-large-1 {
+    width: 8.333%;
+  }
+}

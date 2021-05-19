@@ -1,0 +1,8 @@
+network:
+  ethernets:
+    eth0:
+      dhcp4: true
+      optional: true
+    usb0:
+      dhcp4: true
+      optional: true
